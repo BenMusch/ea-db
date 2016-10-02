@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<h1>
+  <%= @category.name %>
+</h1>
+
+<h3>Subcategories:</h3>
+<ul>
+  <% @category.subcategories.each do |subcategory| %>
+    <li><%= link_to subcategory.name, subcategory %></li>
+  <% end %>
+</ul>
+
+<%= render 'articles/articles', articles: @category.articles %>

@@ -1,0 +1,22 @@
+<tr>
+  <td><%= link_to article.title, article.url %></td>
+  <td>
+    <% article.authors.each do |author| %>
+      <%= link_to author.name, author %> 
+    <% end %>
+  </td>
+  <td><%= link_to article.category.name, article.category %></td>
+  <td><%= link_to article.subcategory.name, article.subcategory %></td>
+  <td>
+    <% article.tags.each do |t| %>
+      <%= link_to t.name, t %> 
+    <% end %>
+  </td>
+  <td><%= article.upvotes %></td>
+  <td>
+    <% if article.media_type %>
+      <%= link_to article.media_type.name, article.media_type %></td>
+    <% end %>
+  <td><%= link_to 'Edit', edit_article_path(article) %></td>
+  <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>
