@@ -7,4 +7,6 @@ class Article < ActiveRecord::Base
   has_many :authors, through: :authorings
   has_many :taggings
   has_many :tags, through: :taggings
+
+  self.per_page = 100
 end
