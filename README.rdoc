@@ -1,14 +1,14 @@
 == TODO
 
- * Pagination
- * Make POST/PATCH/DELETE endpoints work
- * Add background jobs to automatically parse articles from
+* Pagination
+* Make POST/PATCH/DELETE endpoints work
+* Add background jobs to automatically parse articles from
    http://wiki.effectivealtruismhub.com/index.php?title=Effective_Altruism_Wiki
-   * Simple front-end where user can input a wiki page for an author, then
-      automatically generate Article models with the author, let the user
-specify any categories/tags/etc. for the article
-   * Use sidekiq?
- * Upvote button
- * Use React
- * Add filtering by tag, author, etc. from index page for articles
- * Make it look not shitty
+  * Simple front-end where user can input a wiki page for an author, then
+    automatically generate Article models with the author, let the user
+    specify any categories/tags/etc. for the article
+  * Use sidekiq?
+* Upvote button
+* Use React
+* Add filtering by tag, author, etc. from index page for articles
+* Make it look not shitty
