@@ -10,6 +10,7 @@ class SubcategoriesController < ApplicationController
   # GET /subcategories/1
   # GET /subcategories/1.json
   def show
+    @articles = @subcategory.articles.paginate(page: params[:page])
   end
 
   # GET /subcategories/new

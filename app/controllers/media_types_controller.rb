@@ -10,6 +10,7 @@ class MediaTypesController < ApplicationController
   # GET /media_types/1
   # GET /media_types/1.json
   def show
+    @articles = @media_type.articles.paginate(page: params[:page])
   end
 
   # GET /media_types/new

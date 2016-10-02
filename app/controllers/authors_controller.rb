@@ -10,6 +10,7 @@ class AuthorsController < ApplicationController
   # GET /authors/1
   # GET /authors/1.json
   def show
+    @articles = @author.articles.paginate(page: params[:page])
   end
 
   # GET /authors/new
