@@ -1,6 +1,9 @@
 == TODO
 
-* Pagination
+* Data validation & cleaning
+  * Remove improperly encoded chars
+  * Merge categories/tags that are identical aside from case
+  * Basic rails validations
 * Make POST/PATCH/DELETE endpoints work
 * Add background jobs to automatically parse articles from
    http://wiki.effectivealtruismhub.com/index.php?title=Effective_Altruism_Wiki
